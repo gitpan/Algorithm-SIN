@@ -1,0 +1,40 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 4db6f6bd18fa3b8165ad29005ed0d1d24116bc86 Build.PL
+SHA1 1840c1b1ff6e6c6ffbdd8a378e03963d6bef9a97 Changes
+SHA1 81250de6b01a1a46a34375ebf63685a27fdd9608 MANIFEST
+SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
+SHA1 f3f8164f7deadab2ca4d97d45c8f1afc3c44e0e0 META.yml
+SHA1 58d1b5e9e27a0872baf5cd0a3b1793acc2595690 Makefile.PL
+SHA1 5b75936d990bb1b1d0cb4007437f0e5e33d2b2d7 README
+SHA1 c658c836f6dc3fcbb17ceec16672be2e044430d5 lib/Algorithm/SIN.pm
+SHA1 58de75c203de573e6f0e4afb551be37a4da01161 t/00-load.t
+SHA1 bc671ee3f9340231d122eb4884792e610ffc8d0f t/01-test-case.t
+SHA1 f38eac6940d90dcf67ca1393703a18a2ee4c7785 t/02-test-case.t
+SHA1 e9bdc7bf1e829d4619074e5c1737e4322ef26c61 t/manifest.t
+SHA1 20abb89bb191d296a688cae13e20ad095a7c3afb t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (MingW32)
+
+iQEcBAEBAgAGBQJNZoUIAAoJEPYcXBXhRYOhIoMH/3SZ39W20C3M3KLg+jKhLewH
+QImQg/N624OU6mPuMv8yk9Lmmt706vPW/mt12JiDeLyuEhXFQ7+0EvCqGlIycn07
+oMdVFLeK6WSoT+oaLAOnuTrl/SprZlQzm1MDfpNCz/a4X9l7p0lX3dKvPGTJv1ls
+HXb+acWPULpltexw3gTs7A+Ubo5VsGylMj10jGyn11eEYjwQpywpIIVZ/IxeMPDB
+tvMZtgLy3ezwNIL/53tmui9ccDV3eBMEkaxzrzmv1sIJ2bgT4juarpIiJ7FleFAp
+m/Ma4KR/Vl8gbxUW+kO1Z645G/wAJDwZHLrgfANkvgbqSpWsA1gQPNmehAoulp4=
+=M9XE
+-----END PGP SIGNATURE-----
