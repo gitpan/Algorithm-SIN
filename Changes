@@ -1,5 +1,9 @@
 Revision history for Algorithm-SIN
 
+0.04    Wed Mar 02 11:08:20 2011
+        - Removed "-T" from the first line of 00-load.t, pod.t and manifest.t.
+          It appears to me that Mac OS X doesn't like it, for some reason.
+
 0.03    Wed Mar 02 09:41:19 2011
         - Added Readonly.pm to the pre-requisite in the Makefile.PL
 
