@@ -1,5 +1,8 @@
 Revision history for Algorithm-SIN
 
+0.03    Wed Mar 02 09:41:19 2011
+        - Added Readonly.pm to the pre-requisite in the Makefile.PL
+
 0.02    Mon Feb 28 11:35:10 2011
         - Added DISCLAIMER section to the pod.
 
