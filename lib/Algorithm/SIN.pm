@@ -4,15 +4,15 @@ use strict; use warnings;
 
 =head1 NAME
 
-Algorithm::SIN - A very simple module to validate social insurance number (Canada).
+Algorithm::SIN - Function to validate Social Insurance number (Canada).
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Readonly;

@@ -1,5 +1,8 @@
 Revision history for Algorithm-SIN
 
+0.05    Wed Mar 09 18:59:00 2011
+        - Changed the description of the module slightly.
+
 0.04    Wed Mar 02 11:08:20 2011
         - Removed "-T" from the first line of 00-load.t, pod.t and manifest.t.
           It appears to me that Mac OS X doesn't like it, for some reason.
