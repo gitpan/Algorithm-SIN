@@ -1,5 +1,5 @@
 ---
-abstract: 'Interface to validate Social Insurance number (Canada).'
+abstract: "Interface to Canada's Social Insurance Number."
 author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
 build_requires:
@@ -17,7 +17,7 @@ name: Algorithm-SIN
 provides:
   Algorithm::SIN:
     file: lib/Algorithm/SIN.pm
-    version: 0.06
+    version: 0.07
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.06
+version: 0.07

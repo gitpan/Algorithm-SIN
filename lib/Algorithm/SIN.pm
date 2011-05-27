@@ -4,33 +4,36 @@ use strict; use warnings;
 
 =head1 NAME
 
-Algorithm::SIN - Interface to validate Social Insurance number (Canada).
+Algorithm::SIN - Interface to Canada's Social Insurance Number.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Carp;
 use Readonly;
 use Data::Dumper;
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
-    use Algorithm::SIN;
-
-    my $sin = '046-454-286';
-    my $status = Algorithm::SIN::validate($sin);
+This modules lets you validate Canada's Social Insurance Number. It can also format it.
 
 =head1 METHODS
 
-=head2 validate
+=head2 validate()
 
-This method accepts Social Insurance number and validate it against the Canada format.
-For more information please visit http://en.wikipedia.org/wiki/Social_Insurance_Number
+This method accepts Social Insurance number and validate it against the Canada format.For more
+information please visit http://en.wikipedia.org/wiki/Social_Insurance_Number
+
+    use strict; use warnings;
+    use Algorithm::SIN;
+
+    my $sin    = '046-454-286';
+    my $status = Algorithm::SIN::validate($sin);
 
 =cut
 
@@ -41,7 +44,7 @@ sub validate
     
     chomp($sin);    
     $sin =~ s/\s//g;
-	$sin =~ s/\-//g;
+    $sin =~ s/\-//g;
     
     croak("ERROR: Validation failed [SIN should contains 9 digits]\n") if (length($sin) != 9);
     
@@ -60,10 +63,17 @@ sub validate
     }
 }    
 
-=head2 format
+=head2 format()
 
-This method accepts Social Insurance number and returns formatted as three groups of three digits.
-e.g. 123456789 would become 123-456-789. 
+This method  accepts  Social Insurance Number  and returns formatted as three groups of  three
+digits. e.g. 123456789 would become 123-456-789.
+
+    use strict; use warnings;
+    use Algorithm::SIN;
+
+    my ($sin);
+    $sin = '123456789';
+    $sin = Algorithm::SIN::format($sin);
 
 =cut
 
@@ -72,7 +82,7 @@ sub format
     my $sin = shift;
     if (validate($sin))
     {
-		return $sin if (length($sin) > 9);
+        return $sin if (length($sin) > 9);
         my @sin = split(//,$sin);
         return sprintf("%s%s%s %s%s%s %s%s%s", 
             $sin[0],$sin[1],$sin[2],
@@ -101,9 +111,9 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-algorithm-sin at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-SIN>.  
-I will be notified, and then you'll automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests to C<bug-algorithm-sin at rt.cpan.org>,  or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Algorithm-SIN>.I will be
+notified, and then you'll automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
 
@@ -137,15 +147,16 @@ L<http://search.cpan.org/dist/Algorithm-SIN/>
 
 Copyright 2011 Mohammad S Anwar.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+This  program  is  free  software; you can redistribute it and/or modify it under the terms of
+either:  the  GNU  General Public License as published by the Free Software Foundation; or the
+Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
 =head1 DISCLAIMER
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+This  program  is  distributed in the hope that it will be useful,  but  WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut
 

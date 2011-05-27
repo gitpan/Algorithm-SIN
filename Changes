@@ -1,6 +1,9 @@
 Revision history for Algorithm-SIN
 
-0.06    Wed Mar 10 12:30:20 2011
+0.07    Fri May 27 15:53:22 2011
+        - Minor pod changes.
+
+0.06    Thu Mar 10 12:30:20 2011
         - One last time, promise, changed the description of the module.
 
 0.05    Wed Mar 09 18:59:00 2011
