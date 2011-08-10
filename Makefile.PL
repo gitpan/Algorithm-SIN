@@ -13,6 +13,6 @@ WriteMakefile(
       : ()),
     PREREQ_PM     => {
         'Test::More' => 0,
-		'Readonly'   => 0,
+        'Readonly'   => '1.03',
     },
 );

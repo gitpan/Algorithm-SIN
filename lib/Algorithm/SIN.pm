@@ -8,11 +8,11 @@ Algorithm::SIN - Interface to Canada's Social Insurance Number.
 
 =head1 VERSION
 
-Version 0.07
+Version 0.08
 
 =cut
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use Carp;
 use Readonly;

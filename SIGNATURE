@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 4db6f6bd18fa3b8165ad29005ed0d1d24116bc86 Build.PL
-SHA1 f507ad5b76d495a8058368b5b821a971d3d2e106 Changes
+SHA1 a068cb3c2f9bded1f1bbffe51c91cd91b0ba78c2 Build.PL
+SHA1 1e29e862af24e9b7ef1041d17ddd623459133bcf Changes
 SHA1 81250de6b01a1a46a34375ebf63685a27fdd9608 MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 bfcc69b5b055e43cd2d62f2de30ab15b0b3644ae META.yml
-SHA1 2be6e6f01a08b01daf9b04386a39f8393de55b31 Makefile.PL
-SHA1 5b75936d990bb1b1d0cb4007437f0e5e33d2b2d7 README
-SHA1 267edeeceff50e2b93f753a2de42d992150e4b4b lib/Algorithm/SIN.pm
+SHA1 5c09041aa8ef03fb341cec6b40c584dd9026590c META.yml
+SHA1 7a4414833ba131068e17b20cfac9c6ef6243ce4b Makefile.PL
+SHA1 2c02f2af6447d645681dd22292a3321f3c16d579 README
+SHA1 9469822f010adcdc364a67b39e885413041aa2aa lib/Algorithm/SIN.pm
 SHA1 038122d67c216d55d18d00f62fdd8dfbf25d4b57 t/00-load.t
 SHA1 bc671ee3f9340231d122eb4884792e610ffc8d0f t/01-test-case.t
 SHA1 f38eac6940d90dcf67ca1393703a18a2ee4c7785 t/02-test-case.t
@@ -30,11 +30,11 @@ SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJN37vFAAoJEPYcXBXhRYOhv3oH/jcGZSDpWXX4GYDuOrnnlH2B
-yYxlePRjsEUrSMIrHLmhEN7IRqCdsq80IfnycYC4q7UsG+vO3X4hyKx8/HcHgVLw
-dWMABNGxlbdFAwgAyPvTAwUAYvikRtvH3sYrOd54i9nk+wDcmFE3T8bRzHHAXrTP
-l2CAOYqq6hxnbOY+Toq9s9Mj10lVPjg33mbxwxW4/MXIsoIg1bMIHQqPeiHH6xdG
-3JqJsxm6EFNhHvm4jUNlJvqF5b51KZiFCld6UTiOdEVMtl7GUWRlDXjj+uoew3b4
-sNgkgG8PVfdLIupI11d56BVsNXx157hE8u/ADTX8ZGV92ZmSeimcFS+LuYLGbeQ=
-=V9OS
+iQEcBAEBAgAGBQJOQlj/AAoJEPYcXBXhRYOhQ90H/jplMpL3XrksEL+mP8FV9606
+22pZQdcjt31Crw3NSoKosxbPsgYUACKy7lDqI+3rmw47VgS0+1INdrWwmlgTEgK4
+YoZooEyT0yT3lIcG3/YmgcRoMtp3wxo0N/mBkFXBewKkFik7KiYQofBXC+3OrmSy
+7YHaWPhqthzg1mM3JFBdDYUJjHEtbmrLMtELUxietpJKu5Y1HiAhoqhR+avX2ovf
+c8/0EKy/oaBu4KQBPZWvrLgX6BjFfvH3kRVeEoTIDjqvnRRpP1uN6a96qIK/xcXC
+1gOF1OKMcRYc3RGpyQz6msgM4lLviEyf/6LuSfFXWtoj6BSowlV6imz7f7NGU7w=
+=WRv0
 -----END PGP SIGNATURE-----
